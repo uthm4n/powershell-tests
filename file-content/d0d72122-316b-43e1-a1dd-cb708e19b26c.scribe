@@ -1,0 +1,9 @@
+resource "file-content" "d0d72122-316b-43e1-a1dd-cb708e19b26c" {
+  uuid = "d0d72122-316b-43e1-a1dd-cb708e19b26c"
+  content = <<EOFSCRIBE
+Write-Output "These are the processes currently running: "
+Get-Process 
+EOFSCRIBE
+  dateCreated = "2024-10-07T17:29:48.000Z"
+  lastUpdated = "2024-10-07T17:29:48.000Z"
+}

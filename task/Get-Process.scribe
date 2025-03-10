@@ -1,0 +1,19 @@
+resource "task" "Get-Process" {
+  name = "Get-Process"
+  uuid = "8ef9f769-899c-4110-98e8-58bc90529df5"
+  dateCreated = "2024-10-07T17:29:48.000Z"
+  executeTarget = "resource"
+  labels = [ "powershell-test", "windows" ]
+  lastUpdated = "2025-03-10T16:23:00.000Z"
+  options = [
+    {
+      optionType = { code = "winrm.powershellVersion" }
+      value = "7.0"
+    },
+    {
+      content = { uuid = "d0d72122-316b-43e1-a1dd-cb708e19b26c" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
